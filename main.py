@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     from training_conv_net import create_LeNet
     model_conv_net = create_LeNet()
-    model_conv_net.load_weights('./models/cnn_model.h5')
+    model_conv_net.load_weights('./models/cnn_model3.h5')
 
     loss, gt, pred = test(model_MLP, test_images_d, test_labels)
     with open("multi-layer-net.txt", 'w') as f:
